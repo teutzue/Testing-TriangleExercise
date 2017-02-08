@@ -24,7 +24,6 @@ class Main {
         int side1 = Integer.parseInt(numbers[0]);
         int side2 = Integer.parseInt(numbers[1]);
         int side3 = Integer.parseInt(numbers[2]);
-
         if((side1 < 0 || side2 < 0 || side3 < 0)||(side1 + side2 > side3 && side1 + side3 > side2 && side2 + side3 > side1))
             return "Value of the sides are invalid";
         if (numbers.length > 3)return "You entered too many numbers!";
