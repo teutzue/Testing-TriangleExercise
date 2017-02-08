@@ -2,8 +2,8 @@
 
 import java.util.Scanner;
 
-public class Main {
-    static Scanner in = new Scanner(System.in);
+class Main {
+    private static final Scanner in = new Scanner(System.in);
 
     private static final String equilateral = "Equilateral";
     private static final String isosceles = "Isosceles";
@@ -25,7 +25,8 @@ public class Main {
         int side2 = Integer.parseInt(numbers[1]);
         int side3 = Integer.parseInt(numbers[2]);
 
-        if((side1 < 0) || (side2 < 0) || (side3 < 0)) return "Sides can not be negative, they must be positive";
+        if((side1 < 0 || side2 < 0 || side3 < 0)||(side1 + side2 > side3 && side1 + side3 > side2 && side2 + side3 > side1))
+            return "Value of the sides are invalid";
         if (numbers.length > 3)return "You entered too many numbers!";
 
         System.out.println("The numbers are: " + numbers[0] + ',' + numbers[1] +',' + numbers[2]);
@@ -33,7 +34,7 @@ public class Main {
         if ((side1 == side2) && (side2== side3)) return equilateral;
         if (side1 == side2 || side1 == side3 || side2 == side3) return isosceles;
 
-        return scalene;
+         return scalene;
     }
 
 }
