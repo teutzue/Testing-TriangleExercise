@@ -1,0 +1,5 @@
+Review Martin Macej
+
+1. All the logic which has to do with the traingle must be in the triangle class.
+2. The main should only run the program all call the other components.
+3. Format the code.
