@@ -1,0 +1,8 @@
+Best practices:
+
+1. Make separated classes for each entity and handle the logic related to them there.
+2. Have the main class calling only other components.
+3. Make varibles private when possible.
+4. Format the code.
+5. Code independent small methods.
+6. Follow Oracle coding standars.
