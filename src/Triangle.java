@@ -29,8 +29,8 @@ public class Triangle {
 
         System.out.println("The numbers are: " + numbers[0] + ',' + numbers[1] +',' + numbers[2]);
 
-        if ((side1 + side2 > side3) || (side1 + side3 > side2) || (side2 + side3 > side1))
-            return "Not a triangle";
+        if (!((side1 + side2 > side3) || (side1 + side3 > side2) || (side2 + side3 > side1)))
+        return "Not a triangle";
         if ((side1 == side2) && (side2== side3)) return equilateral;
         if (side1 == side2 || side1 == side3 || side2 == side3) return isosceles;
 

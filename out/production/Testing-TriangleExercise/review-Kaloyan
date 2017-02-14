@@ -1,0 +1,4 @@
+Review Kaloyan Kolev
+
+1. Move all logic from the main to the triangle class.
+2. Check the condition that the values can form a triangle.
