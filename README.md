@@ -12,3 +12,5 @@ The program reads three integer values from an input dialog. The three values re
 4,4,9 >isosceles
 0,0,0 > error
 -2,0,2 > error
+
+- All important files in the src folder
